@@ -1,2 +1,2 @@
-export default function parse_string(string: string): number;
-export default function parse_number(number: number): string;
+export function parse_string(string: string): number;
+export function parse_number(number: number): string;
