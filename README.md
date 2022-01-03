@@ -5,7 +5,7 @@ This library allows you to convert an abbreviated string to a number and vice ve
 ## Installation
 
 ```
-npm install @adrastopoulos/number-parser
+npm install https://github.com/Adrastopoulos/Number-Parser
 ```
 
 ## Usage
