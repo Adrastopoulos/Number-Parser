@@ -20,13 +20,13 @@ export function parse_number(number, decimals = 2) {
     case digits < 16:
       return (number / Math.pow(10, 12)).toFixed(decimals) + "t";
     case digits < 19:
-      return (number / Math.pow(10, 3)).toFixed(decimals) + "p";
+      return (number / Math.pow(10, 15)).toFixed(decimals) + "p";
     case digits < 22:
-      return (number / Math.pow(10, 3)).toFixed(decimals) + "e";
+      return (number / Math.pow(10, 18)).toFixed(decimals) + "e";
     case digits < 25:
-      return (number / Math.pow(10, 3)).toFixed(decimals) + "z";
+      return (number / Math.pow(10, 21)).toFixed(decimals) + "z";
     case digits < 28:
-      return (number / Math.pow(10, 3)).toFixed(decimals) + "y";
+      return (number / Math.pow(10, 24)).toFixed(decimals) + "y";
   }
 }
 
