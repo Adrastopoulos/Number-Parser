@@ -1,0 +1,26 @@
+{
+  "name": "number-parser",
+  "version": "1.0.0",
+  "description": "Parse numbers with abbreviations.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adrastopoulos/number-parser.git"
+  },
+  "author": {
+    "name": "Adrastopoulos",
+    "url": "https://github.com/Adrastopoulos"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Adrastopoulos/number-parser/issues"
+  },
+  "homepage": "https://github.com/Adrastopoulos/number-parser#readme",
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}
