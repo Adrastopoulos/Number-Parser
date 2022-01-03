@@ -31,7 +31,7 @@ function parse_number(number, decimals = 2) {
 }
 
 function parse_string(string) {
-  const abbreviation = string.charAt(string.length - 1);
+  const abbreviation = string.charAt(string.length - 1).toLowerCase();
   string = string.replace(/[^0-9.]/g, "");
   switch (abbreviation) {
     default:
