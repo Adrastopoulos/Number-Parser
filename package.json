@@ -1,5 +1,5 @@
 {
-  "name": "number-parser",
+  "name": "@adrastopoulos/number-parser",
   "version": "1.0.0",
   "description": "Parse numbers with abbreviations.",
   "main": "index.js",
