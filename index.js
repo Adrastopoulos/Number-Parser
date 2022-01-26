@@ -1,4 +1,4 @@
-function parse_number(number, decimals = 2) {
+function parseNumber(number, decimals = 2) {
   let temp = number;
   let digits = 1;
   while (temp >= 10) {
@@ -30,7 +30,7 @@ function parse_number(number, decimals = 2) {
   }
 }
 
-function parse_string(string) {
+function parseString(string) {
   const abbreviation = string.charAt(string.length - 1).toLowerCase();
   string = string.replace(/[^0-9.]/g, "");
   switch (abbreviation) {
@@ -55,4 +55,9 @@ function parse_string(string) {
   }
 }
 
-module.exports = { parse_number, parse_string }
+function parseInteger(string) {
+  const val = String(parse_string(string));
+  return parseInt(val);
+}
+
+module.exports = { parseNumber, parseString, parseInteger }
