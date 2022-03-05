@@ -31,27 +31,28 @@ function parseNumber(number, decimals = 2) {
 }
 
 function parseString(string) {
+  const sign = string.charAt(0) === '-' ? '-' : ''; 
   const abbreviation = string.charAt(string.length - 1).toLowerCase();
-  string = string.replace(/[^0-9.]/g, "");
+  res =  sign + string.replace(/[^0-9.]/g, "");
   switch (abbreviation) {
     default:
-      return Number(string);
+      return Number(res);
     case "k":
-      return Number(string) * Math.pow(10, 3);
+      return Number(res) * Math.pow(10, 3);
     case "m":
-      return Number(string) * Math.pow(10, 7);
+      return Number(res) * Math.pow(10, 7);
     case "g":
-      return Number(string) * Math.pow(10, 10);
+      return Number(res) * Math.pow(10, 10);
     case "t":
-      return Number(string) * Math.pow(10, 13);
+      return Number(res) * Math.pow(10, 13);
     case "p":
-      return Number(string) * Math.pow(10, 16);
+      return Number(res) * Math.pow(10, 16);
     case "e":
-      return Number(string) * Math.pow(10, 19);
+      return Number(res) * Math.pow(10, 19);
     case "z":
-      return Number(string) * Math.pow(10, 22);
+      return Number(res) * Math.pow(10, 22);
     case "y":
-      return Number(string) * Math.pow(10, 25);
+      return Number(res) * Math.pow(10, 25);
   }
 }
 
