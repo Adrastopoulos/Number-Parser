@@ -1,7 +1,7 @@
 function parseNumber(number, decimals = 2) {
   let temp = number;
   let digits = 1;
-  while (temp >= 10) {
+  while (Math.abs(temp) >= 10) {
     temp /= 10;
     digits++;
   }
