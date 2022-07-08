@@ -1,4 +1,5 @@
 function parseNumber(number, decimals = 2) {
+  if (typeof number !== 'number') throw new TypeError('Input is not a number')
   let temp = number;
   let digits = 1;
   while (Math.abs(temp) >= 10) {
@@ -31,6 +32,7 @@ function parseNumber(number, decimals = 2) {
 }
 
 function parseString(string) {
+  if (typeof string !== 'string') throw new TypeError('Input is not a string')
   const sign = string.charAt(0) === '-' ? '-' : ''; 
   const abbreviation = string.charAt(string.length - 1).toLowerCase();
   res =  sign + string.replace(/[^0-9.]/g, "");
