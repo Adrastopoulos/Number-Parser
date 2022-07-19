@@ -59,7 +59,7 @@ function parseString(string) {
 }
 
 function parseInteger(string) {
-  const val = String(parse_string(string));
+  const val = String(parseString(string));
   return parseInt(val);
 }
 
